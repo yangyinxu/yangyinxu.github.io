@@ -1,0 +1,37 @@
+.featured {
+	color: white;
+	font-weight: 500;
+	width: 500px;
+	/* background-color: red; */
+}
+
+img {
+	border-radius: 10%;
+	/* background-color: orange; */
+}
+
+.description {
+	/* border: orange solid 1px; */
+	height: 400px;
+	padding: 20px;
+	color: white;
+}
+
+body {
+	margin: 0px;
+}
+
+.featured_container {
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 5%;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+.navbar-nav > li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
