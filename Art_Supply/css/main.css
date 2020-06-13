@@ -1,7 +1,7 @@
 .featured {
 	color: white;
 	font-weight: 500;
-	width: 500px;
+	width: fit-content;
 	/* background-color: red; */
 }
 
@@ -11,14 +11,13 @@ img {
 }
 
 .description {
-	/* border: orange solid 1px; */
-	height: 400px;
 	padding: 20px;
 	color: white;
 }
 
-body {
-	margin: 0px;
+body.vegas-container {
+	min-width: fit-content;
+	/* min-width: 100vw; */
 }
 
 .featured_container {
