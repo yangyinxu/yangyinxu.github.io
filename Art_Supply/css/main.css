@@ -1,3 +1,7 @@
+p {
+	font-size: 1.3rem;
+}
+
 .featured {
 	color: white;
 	font-weight: 500;
@@ -5,9 +9,36 @@
 	/* background-color: red; */
 }
 
-img {
-	border-radius: 10%;
-	/* background-color: orange; */
+.featured_container {
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.8);
+	/* margin: 20px auto; */
+	/* border-radius: 5%; */
+}
+
+h1,h2{
+	font-weight: 200;
+}
+
+.explore_container {
+	color: white;
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.product_container {
+	color: white;
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-nav > li {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .description {
@@ -18,19 +49,4 @@ img {
 body.vegas-container {
 	min-width: fit-content;
 	/* min-width: 100vw; */
-}
-
-.featured_container {
-	padding: 2rem;
-	background-color: rgba(0, 0, 0, 0.3);
-	border-radius: 5%;
-}
-
-p {
-	font-size: 1.3rem;
-}
-
-.navbar-nav > li {
-	padding-left: 10px;
-	padding-right: 10px;
 }
