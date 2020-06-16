@@ -55,7 +55,7 @@
             </ul>
           <ul class="nav navbar-nav ml-auto">
             <li class="nav-item cart">
-              <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i><span></span></a>
+                <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-lg"></i><span></span></a>
             </li>
 
             <li class="nav-item">
@@ -75,42 +75,29 @@
 
       <!-- Main content -->
       <div class="container explore_container">
-        <h2>Explore</h2>
-        <h1>Tablet Products</h1>
+        <h2>Cart</h2>
+        <button id="empty_cart" class="btn btn-danger"><i class="fas fa-times"></i> Empty Cart</button>
       </div>
 
       <!-- Products -->
-      <div class="container product_container">
-        <div class="row">
+      <div class="container cart_container">
+            <h5 class="d-flex col-3 justify-content-center">Title</h5>
+            <h5 class="d-flex col-3 justify-content-center">Price</h5>
+            <h5 class="d-flex col-3 justify-content-center">Quentity</h5>
+            <h5 class="d-flex col-3 justify-content-center">Total</h5>
 
-          <div class="col-sm-6 col-md-4 text-center">
-            <img src="https://wcm-cdn.wacom.com/-/media/images/products/pen-tablets/eol/wacom intuos pro/wacom-intuos-pro-medium-tn6.png?h=180&la=en&w=180&hash=9B5D82304AACD939E349E3B4AFAE29EC" alt="">
-            <p>Wacom Intuos Pro</p>
-            <p>A professional pen tablet with multi-touch capabilities available in small, medium and large sizes</p>
-            <a class="btn btn-primary add-cart cart1" href="#">Add to Cart</a>
-          </div>
+            <!-- <div class="products">
 
-          <div class="col-sm-6 col-md-4 text-center">
-            <img src="https://wcm-cdn.wacom.com/-/media/images/products/pen-tablets/eol/wacom intuos pro/wacom-intuos-small-pistachio-wbt-tn2.png?h=180&la=en&w=180&hash=01501BD2DB6B85FD1B06535F68900990" alt="">
-            <p>Wacom Cintiq Pro 24</p>
-            <p>A pen tablet with a simply great pen experience. It couldn’t be easier.</p>
-            <a class="btn btn-primary add-cart cart2" href="#">Add to Cart</a>
-          </div>
-
-          <div class="col-sm-6 col-md-4 text-center">
-            <img src="https://wcm-cdn.wacom.com/-/media/images/products/pen-tablets/one-by-wacom-2017/one-by-wacom-small-tn.png?h=180&la=en&w=180&hash=66C565AE7B34F8E97F8F697E1D60F1B9" alt="">
-            <p>Wacom Cintiq 22HD</p>
-            <p>A pen tablet with a simply great pen experience. It couldn’t be easier..</p>
-            <a class="btn btn-primary add-cart cart3" href="#">Add to Cart</a>
-          </div>
-
-        </div>
+            </div> -->
       </div>
 
-      <br>
+      <div class="container cart_container">
+        <div class="products"></div>
+        
+  </div>
 
       <!-- Footer -->
-      <footer class="footer-area footer--light">
+      <footer class="footer-area footer--light" style="margin-top:300px">
         <div class="footer-big">
           <!-- start .container -->
           <div class="container">
@@ -176,8 +163,11 @@
 
         <!-- Scripts -->
 
+        <!-- cart script -->
+        <script src="js/cart.js"></script>
+
         <!-- Main Script -->
-        <script src="js/tablets.js"></script>
+        <script src="js/main.js"></script>
 
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/58ef00fdaf.js" crossorigin="anonymous"></script>
