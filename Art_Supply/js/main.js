@@ -1,13 +1,72 @@
 let carts = document.querySelectorAll(".add-cart");
 
-let products = [
-    {
-        name: 'Galaxy Book Flex',
-        tag: 'gbf',
-        price: 3200,
-        inCart: 0
-    }
-];
+let products = [];
+
+//edit product list based on page title
+let title = document.querySelector("title");
+if(title.textContent == "Art Supply"){
+    products = [
+        {
+            name: 'Galaxy Book Flex',
+            tag: 'gbf',
+            price: 3200,
+            inCart: 0
+        }
+    ];
+}
+else if(title.textContent == "Displays | Art Supply"){
+    products = [
+        {
+            name: 'Wacom Cintiq Pro 32',
+            tag: 'wcp32',
+            price: 3200,
+            inCart: 0
+        },
+        {
+            name: 'Wacom Cintiq Pro 24',
+            tag: 'wcp24',
+            price: 2400,
+            inCart: 0
+        },
+        {
+            name: 'Wacom Cintiq Pro 22hd',
+            tag: 'wcp22hd',
+            price: 2200,
+            inCart: 0
+        },
+        {
+            name: 'Wacom One',
+            tag: 'wcone',
+            price: 1000,
+            inCart: 0
+        }
+    ];
+}
+else if(title.textContent == "Tablets | Art Supply"){
+    products = [
+        {
+            name: 'Wcom Intuos Pro',
+            tag: 'wip',
+            price: 3200,
+            inCart: 0
+        },
+        {
+            name: 'Wacom Intuos',
+            tag: 'wi',
+            price: 2400,
+            inCart: 0
+        },
+        {
+            name: 'One by Wacome',
+            tag: 'wbw',
+            price: 2200,
+            inCart: 0
+        }
+    ];
+}
+else{
+    console.log("Zero products loaded");
+}
 
 // Add event listeners for all buttons
 for(let i=0; i < carts.length; i++){
@@ -109,7 +168,7 @@ function displayCart(){
                 <span class="d-flex col-3 justify-content-center">${item.name}</span>
                 <span class="d-flex col-3 justify-content-center">${item.price}</span>
                 <span class="d-flex col-3 justify-content-center">${item.inCart}</span>
-                <span class="d-flex col-3 justify-content-center">$ ${item.inCart * item.price}</span>
+                <span class="d-flex col-3 justify-content-center">$ ${item.inCart * item.price}.00</span>
             </div>
 
             <hr>
@@ -122,7 +181,7 @@ function displayCart(){
                         Total:
                     </div>
                     <div class="basketTotal">
-                        $${cartCost}.00
+                        $ ${cartCost}.00
                     </div>
                 </div>
             `
